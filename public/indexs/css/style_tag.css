@@ -1,0 +1,781 @@
+.study_body {
+    position: relative;
+}
+.art-title {
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+}
+.study_menu {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 110px;
+    z-index: 9;
+    background: #fff;
+}
+.study_list {
+    padding: 0px;
+    width: 900px;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 4px #ebebeb;
+}
+.study_left {
+    padding: 0px 0px 0px 130px;
+    width: 900px;
+    position: relative;
+}
+.study_right {
+    width: 280px;
+}
+.study_content {
+    width: 860px;
+    position: relative;
+}
+.study_side {
+    width: 330px;
+}
+.study_right {
+    width: 280px;
+}
+.study_fixed {
+    position: fixed;
+    top: 74px;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 999;
+}
+.study_menu .study_menu_title {
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #eb373a;
+}
+.study_menu .study_menu_nav a {
+    border-top: 1px solid #ebebeb;
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+}
+.study_menu .study_menu_nav .active {
+    background: #eb373a;
+    color: #fff;
+}
+.study_mod {
+    margin-top: 10px;
+}
+.study_mod:first-child {
+    margin-top: 0px;
+}
+.study_mod_title {
+    border-bottom: 2px solid #ebebeb;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    position: relative;
+}
+.study_mod_title li {
+    float: left;
+    line-height: 20px;
+    width: 14.2%;
+    padding: 10px 5px;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    text-align: center;
+}
+.study_mod_title li a {
+    color: #666;
+}
+.study_mod_title li.active a, .study_mod_title li a:hover {
+    color: #eb373a;
+    text-decoration: none;
+}
+.study_mod_title li.active:after {
+    content: "";
+    border-bottom: 3px solid #eb373a;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+.study_mod_title li.active b, .study_mod_title li.active b:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    text-align: left;
+    white-space: normal;
+    font-size: 0px;
+}
+.study_mod_title li.active b {
+    bottom: 0px;
+    left: 50%;
+    margin-left: -8px;
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+    border-bottom-color: #eb373a;
+    border-width: 8px;
+}
+.study_mod_title li.active b:after {
+    content: "";
+    border-width: 7px;
+    top: 1px;
+    margin-left: -7px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+}
+.study_mod_body {
+    padding: 20px 0px 0px 0px;
+}
+.study_mod_more {
+    clear: both;
+    padding: 0px;
+    margin: 10px 0px 0px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+.study_mod_more:hover {
+    color: #eb373a;
+}
+.study_mod_more a {
+    font-size: 12px;
+    color: #999;
+}
+.study_mod_more a:hover {
+    color: #eb373a;
+}
+.study_tag {
+    padding-left: 26px;
+    background: url(../images/icon.png) no-repeat 0px 6px;
+    height: 30px;
+    line-height: 30px;
+}
+.study_tag a {
+    margin: 0px 6px 0px 0px;
+    color: #999;
+    font-size: 12px;
+}
+.study_tag a:hover {
+    color: #eb373a;
+}
+.study_mod_box {
+    height: 480px;
+    overflow: hidden;
+}
+.study_mod_box.active {
+    height: auto;
+}
+.study_mod_box .label-list {
+    height: 452px;
+    overflow: hidden;
+}
+.study_mod_box.active .label-list {
+    height: auto;
+}
+.study_browse {
+    margin-top: 10px;
+}
+.study_browse:first-child {
+    margin-top: 0px;
+}
+.study_browse_title {
+    border-bottom: 2px solid #ebebeb;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    position: relative;
+}
+.study_browse_title li {
+    float: left;
+    line-height: 20px;
+    padding: 20px 5px;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    text-align: center;
+}
+.study_browse_title li a {
+    color: #666;
+}
+.study_browse_title li.active a, .study_browse_title li a:hover {
+    color: #eb373a;
+    text-decoration: none;
+}
+.study_browse_title li.active:after {
+    content: "";
+    border-bottom: 3px solid #eb373a;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+.study_browse_title li.active b, .study_mod_title li.active b:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    text-align: left;
+    white-space: normal;
+    font-size: 0px;
+}
+.study_browse_title li.active b {
+    bottom: 0px;
+    left: 50%;
+    margin-left: -8px;
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+    border-bottom-color: #eb373a;
+    border-width: 8px;
+}
+.study_browse_title li.active b:after {
+    content: "";
+    border-width: 7px;
+    top: 1px;
+    margin-left: -7px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+}
+.study_browse_body {
+    padding: 20px 0px 0px 0px;
+}
+.study_browse .study_browse_body {
+    padding: 20px 10px;
+}
+.study_browse .study_browse_label {
+    overflow: hidden;
+    width: 100%;
+}
+.study_browse .study_browse_label li {
+    width: 16.6%;
+    margin-bottom: 16px;
+}
+/*微信推广begin*/
+.index_nav .index_item {
+    width: 250px;
+    float: left;
+    margin-right: 6px;
+    position: relative;
+}
+.index_nav .index_img {
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    border: 1px solid #eee;
+    display: table-cell;
+    vertical-align: middle;
+}
+.index_nav .index_img img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.index_nav .index_title {
+    font-weight: bold;
+    padding: 10px 0px 0px;
+}
+.index_nav .index_mun {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    background: #f79646;
+    text-align: center;
+    border-radius: 0px 0px 50% 0px;
+}
+.index_nav .index_tag {
+    padding-left: 26px;
+    background: url(../images/icon.png) no-repeat 0px 6px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 6px;
+}
+.index_nav .index_tag a {
+    margin: 0px 6px 0px 0px;
+    color: #999;
+    font-size: 12px;
+}
+.index_nav .index_tag a:hover {
+    color: #eb373a;
+}
+/*微信推广end*/
+.label {
+    overflow: hidden;
+}
+.label-list .label-item {
+    width: 134px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.study_nav {
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 0 4px #ebebeb;
+}
+.study_nav:first-child {
+    margin-top: 0px;
+}
+.study_nav_title {
+    border-bottom: 2px solid #ebebeb;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    position: relative;
+}
+.study_nav_title .study_nav_span {
+    float: left;
+    line-height: 20px;
+    padding: 20px 10px;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 16px;
+}
+.study_nav_title .study_nav_more {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    line-height: 20px;
+    height: 20px;
+    margin-top: -10px;
+}
+.study_nav_title .study_nav_span.active:after {
+    content: "";
+    border-bottom: 3px solid #eb373a;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+.study_nav_title .study_nav_span.active b, .study_nav_title .study_nav_span.active b:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    text-align: left;
+    white-space: normal;
+    font-size: 0px;
+}
+.study_nav_title .study_nav_span.active b {
+    bottom: 0px;
+    left: 50%;
+    margin-left: -8px;
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+    border-bottom-color: #eb373a;
+    border-width: 8px;
+}
+.study_nav_title .study_nav_span.active b:after {
+    content: "";
+    border-width: 7px;
+    top: 1px;
+    margin-left: -7px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+}
+.study_nav .study_nav_body {
+    padding: 10px 5px 5px 10px;
+}
+.study_relevant li {
+    margin: 0px 10px 10px 0px;
+    float: left;
+}
+.study_recommend {
+}
+.study_recommend li {
+    padding-left: 30px;
+    line-height: 40px;
+    height: 40px;
+    overflow: hidden;
+    color: #222a37;
+    position: relative;
+    border-top: 1px dashed #e4e4e4;
+}
+.study_recommend li:first-child {
+    border-top: none
+}
+.study_recommend li a {
+    color: #444;
+}
+.study_recommend li a:hover {
+    color: #222a37;
+}
+.study_recommend li a:hover {
+    text-decoration: underline;
+}
+.study_recommend li span.middot {
+    display: block;
+    position: absolute;
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    left: 3px;
+    top: 10px;
+    background: #999;
+    color: #fff;
+}
+.study_recommend li span.middot.dottop {
+    background: #eb373a;
+    color: #fff;
+}
+.study_marketing {
+}
+.study_marketing .study_marketing_title {
+    border-bottom: 2px solid #ebebeb;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    position: relative;
+}
+.study_marketing .study_marketing_title .study_marketing_span {
+    float: left;
+    line-height: 20px;
+    padding: 20px 10px;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 16px;
+}
+.study_marketing .study_marketing_title .study_marketing_span.active:after {
+    content: "";
+    border-bottom: 3px solid #eb373a;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+.study_marketing .study_marketing_title .study_marketing_span.active b, .study_marketing .study_marketing_title .study_marketing_span.active b:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    text-align: left;
+    white-space: normal;
+    font-size: 0px;
+}
+.study_marketing .study_marketing_title .study_marketing_span.active b {
+    bottom: 0px;
+    left: 50%;
+    margin-left: -8px;
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+    border-bottom-color: #eb373a;
+    border-width: 8px;
+}
+.study_marketing .study_marketing_title .study_marketing_span.active b:after {
+    content: "";
+    border-width: 7px;
+    top: 1px;
+    margin-left: -7px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+}
+.study_marketing .study_marketing_body {
+    padding: 20px 0px 0px 20px;
+}
+.study_marketing_label {
+    overflow: hidden;
+}
+.study_marketing_label li {
+    width: 130px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    float: left;
+}
+.study_marketing_btn {
+    margin: 10px auto 20px;
+    width: 260px;
+}
+.study_marketing_btn a {
+    width: 100%;
+}
+/*相关推荐 begin*/
+.study_relevant {
+}
+.study_relevant .study_relevant_title {
+    border-bottom: 2px solid #ebebeb;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    position: relative;
+}
+.study_relevant .study_relevant_title .study_relevant_span {
+    float: left;
+    line-height: 20px;
+    padding: 20px 10px;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 16px;
+}
+.study_relevant .study_relevant_title .study_relevant_span.active:after {
+    content: "";
+    border-bottom: 3px solid #eb373a;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+.study_relevant .study_relevant_title .study_relevant_span.active b, .study_relevant .study_relevant_title .study_relevant_span.active b:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    text-align: left;
+    white-space: normal;
+    font-size: 0px;
+}
+.study_relevant .study_relevant_title .study_relevant_span.active b {
+    bottom: 0px;
+    left: 50%;
+    margin-left: -8px;
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+    border-bottom-color: #eb373a;
+    border-width: 8px;
+}
+.study_relevant .study_relevant_title .study_relevant_span.active b:after {
+    content: "";
+    border-width: 7px;
+    top: 1px;
+    margin-left: -7px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #eb373a;
+}
+.study_relevant .study_relevant_body {
+    padding: 20px 0px 20px 20px;
+}
+.relevant_tab ul {
+    height: 42px;
+}
+.relevant_tab li {
+    width: 128px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    border: 1px solid #ffffff;
+    border-bottom-color: #ebebeb;
+    border-radius: 5px 5px 0px 0px;
+    background: #fff;
+}
+.relevant_tab li.active {
+    border-color: #ebebeb;
+    border-bottom-color: #fff;
+}
+.relevant_con {
+    padding-top: 20px;
+}
+.relevant_box .relevant_label {
+    height: 180px;
+    overflow: hidden;
+}
+.relevant_box.active .relevant_label {
+    height: auto;
+}
+.relevant_label .label_item {
+    width: 150px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*相关推荐 end*/
+/**/
+
+.study_list li {
+    padding: 20px;
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+}
+.study_list li:hover {
+    background: #f5f5f5;
+}
+.study_list li:first-child {
+    border-top: none;
+}
+.study_list li a:hover .list_desc {
+    color: #999;
+}
+.study_list li .list_text {
+    position: relative;
+    padding: 0px;
+}
+.study_list li .list_type {
+    position: relative;
+}
+.study_list li .list_pic ~ .list_text {
+    padding-right: 200px;
+    height: 128px;
+}
+.study_list li .list_text .list_title {
+    font-size: 16px;
+    word-break: normal;
+    word-wrap: break-word;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+}
+.study_list li .list_text .list_title span {
+    margin-right: 6px;
+}
+.study_list li .list_text .list_desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+    word-break: break-all;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+}
+.study_list li .list_text .list_tag {
+    font-size: 14px;
+    line-height: 20px;
+    color: #bbb;
+    text-align: right;
+}
+.study_list li .list_pic {
+    width: 176px;
+    height: 128px;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+}
+.study_list li .list_pic img {
+    width: 100%;
+    height: 100%;
+}
+/*微信推广百科 begin */
+.weixin_baike .study_mod_body {
+    padding: 20px 10px;
+}
+.weixin_baike .weixin_baike_label {
+    overflow: hidden;
+    width: 100%;
+}
+.weixin_baike .weixin_baike_label li {
+    width: 16.6%;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*微信推广百科 end */
+.study_coll {
+    border-top: 1px dashed #ccc;
+    overflow: hidden;
+    padding: 10px;
+}
+.study_coll:first-child {
+    border-top: none;
+}
+.study_coll h4 {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center
+}
+.study_coll h4 a {
+    font-weight: bold;
+    color: #BB2A31;
+}
+.study_coll h4 a:hover {
+    text-decoration: underline
+}
+.study_coll .study_coll_pic {
+    width: 106px;
+    float: left;
+    margin-right: 6px;
+}
+.study_coll .study_coll_pic a img {
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 85px;
+    float: left;
+    padding: 2px;
+    border-radius: 3px;
+}
+.study_coll .study_coll_pic a:hover img {
+    border: 1px solid #f00;
+}
+.study_coll p {
+    height: 60px;
+    overflow: hidden;
+    color: #666666;
+    line-height: 20px;
+    text-indent: 24px;
+    margin-left: 110px;
+}
+.study_coll p a {
+    color: #900;
+}
+.list_nav li {
+    padding-left: 20px;
+    line-height: 32px;
+    height: 32px;
+    overflow: hidden;
+    color: #222a37;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list_nav li a {
+    color: #444;
+}
+.list_nav li a:hover {
+    color: #222a37;
+}
+.list_nav li a:hover {
+    text-decoration: underline;
+}
+.list_nav li span.middot {
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    left: 3px;
+    top: 13px;
+    background: #999
+}
